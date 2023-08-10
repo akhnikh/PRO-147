@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 3 10">
+            <a-camera></a-camera>
+        </a-entity>
+        
+        <a-sky src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/sky.jpg"></a-sky>
+
+        <a-plane id="wall" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/wall.jpeg" position="0 6.5 -4.5" height="13" width="20"></a-plane>
+        
+        <!--wall posters-->
+        <a-plane id="wall-poster-right" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png" position="5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+        
+        <a-plane id="wall-poster-middle" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/middle-poster.png" position="0 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+        <a-plane id="wall-poster-left" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png" position="-5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+        <!--ground-->
+        <a-plane id="ground" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/ground.webp" position="0 0 0" height="10" width="20" rotation="-90 0 0"></a-plane>
+        <a-plane
+            id="carpet"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/carpet.jpg"
+            position="0 0.1 0.5"
+            rotation="-90 0 0"
+            width="8"
+            height="5"
+        ></a-plane>
+        <!--Table-->
+        <a-box id="table-top" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+            width="9"
+            height="3.5"
+            position="0 2 0"
+            rotation="90 0 0"
+            depth="0.2"
+        >
+        <a-cylinder id="table-base" src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg" position="0 0 1" radius="0.8" height="2" rotation="90 0 0"></a-cylinder>
+        </a-box>
+    </a-scene>
+</body>
+
+</html>
